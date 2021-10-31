@@ -10,7 +10,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include<climits>
 using namespace std;
 
-int miniDist(int distance[], bool Tset[]) // finding minimum distance
+int miniDist(int distance[], bool Tset[]) // mencari jarak minimum
 {
     int minimum=INT_MAX,ind;
               
@@ -25,7 +25,7 @@ int miniDist(int distance[], bool Tset[]) // finding minimum distance
     return ind;
 }
 
-void DijkstraAlgo(int graph[6][6],int src) // adjacency matrix 
+void DijkstraAlgo(int graph[6][6],int src) // ukuran matrix 
 {
     int distance[6]; // // array to calculate the minimum distance for each node                             
     bool Tset[6];// boolean array to mark visited and unvisited for each node
@@ -37,7 +37,7 @@ void DijkstraAlgo(int graph[6][6],int src) // adjacency matrix
         Tset[k] = false;    
     }
     
-    distance[src] = 0;   // Source vertex distance is set 0               
+    distance[src] = 0;   // titik vertex awal di set ke 0               
     
     for(int k = 0; k<6; k++)                           
     {
